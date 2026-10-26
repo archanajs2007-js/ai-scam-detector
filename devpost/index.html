@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Check suspicious messages for common scam warning signs.">
+  <title>Message Scam Check</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="logo" aria-hidden="true">✉</div>
+      <p class="eyebrow">PAUSE. CHECK. PROTECT.</p>
+      <h1>Message Scam Check</h1>
+      <p class="subtitle">
+        Unsure about a message? Check it for common warning signs.
+      </p>
+    </header>
+
+    <section class="checker" aria-labelledby="input-title">
+      <label id="input-title" for="message">Paste a message</label>
+      <textarea
+        id="message"
+        placeholder="Paste the SMS or message you want to check..."
+        rows="7"
+      ></textarea>
+      <button id="check-button" type="button">Check message →</button>
+      <p class="privacy-note">🔒 Your message is checked in this browser.</p>
+      <div id="result" aria-live="polite" hidden></div>
+    </section>
+
+    <footer>
+      <p>
+        A helpful second opinion, not a guarantee.
+        Verify suspicious requests through official channels.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
